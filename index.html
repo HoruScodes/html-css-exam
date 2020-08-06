@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!--======================Body======================-->
+    <!--======================D1======================-->
+    <div class="title">
+        <h1>Interational Currency Exchange Office</h1>
+    </div>
+    <!--======================D2======================-->
+    <div class="body">
+        <div class="select">
+            <p>Select Currency</p>
+            <select name="Currency" id="curr" onclick="displayRates()">
+                <option value="NONE"></option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="FRANCE">FRANCE</option>
+            </select>
+            <div>
+                <input type="text" id="from" name="from" disabled><br>
+
+            </div>
+            <div>
+                <input type="text" id="to" name="to" disabled><br>
+            </div>
+        </div>
+    </div>
+    <div class="convestion">
+        <p>Conversion</p>
+        <div>
+            <input type="radio"  id="selection" name="sel" value="from" onclick="selectCurrency()">
+            <input type="text" id="from1" name="from" disabled><br>
+        </div>
+        <div>
+            <input type="radio" id="selection" name="sel" value="to" onclick="selectCurrency()">
+            <input type="text" id="to1" name="to" disabled><br>
+        </div>
+
+    </div>
+    <div class="result">
+        <div class="conv">
+            <input type="number" id="userInput" name="userInput"><br>
+            <input type="text" id="from2" name="from" disabled><br>
+            <input type="button" onclick="convert()" value="Convert to >>">
+            <input type="text" id="to2" name="to" disabled><br>
+            <input type="text" id="result" name="result" disabled><br>
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
